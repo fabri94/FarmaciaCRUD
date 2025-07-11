@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="421.0" prefWidth="981.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ViewController">
+   <children>
+      <Pane layoutX="1.0" layoutY="1.0" prefHeight="413.0" prefWidth="975.0">
+         <children>
+            <ListView fx:id="listViewProductoFarmaceuticos" layoutX="10.0" layoutY="55.0" prefHeight="304.0" prefWidth="958.0" />
+            <Button fx:id="btnAgregar" layoutX="14.0" layoutY="365.0" mnemonicParsing="false" onAction="#agregarProductoFarmaceutico" prefHeight="43.0" prefWidth="134.0" text="Agregar">
+               <font>
+                  <Font name="Monospaced Regular" size="16.0" />
+               </font></Button>
+            <Button fx:id="btnModificar" layoutX="255.0" layoutY="365.0" mnemonicParsing="false" onAction="#modificarProductoFarmaceutico" prefHeight="43.0" prefWidth="134.0" text="Modificar">
+               <font>
+                  <Font name="Monospaced Regular" size="16.0" />
+               </font></Button>
+            <Button fx:id="btnEliminar" layoutX="488.0" layoutY="365.0" mnemonicParsing="false" onAction="#eliminarProductoFarmaceutico" prefHeight="43.0" prefWidth="134.0" text="Eliminar">
+               <font>
+                  <Font name="Monospaced Regular" size="16.0" />
+               </font></Button>
+            <Label fx:id="lblNombreFarmacia" alignment="CENTER" layoutX="322.0" layoutY="14.0" prefHeight="33.0" prefWidth="383.0" text="Farmacia Don Alberto">
+               <font>
+                  <Font name="Monospaced Regular" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnFiltrarProximos" layoutX="654.0" layoutY="374.0" mnemonicParsing="false" onAction="#mostrarProximosVencimiento" text="Ver proximos a vencer" />
+            <Button fx:id="btnGuardarProximos" layoutX="802.0" layoutY="374.0" mnemonicParsing="false" onAction="#guardarArchivoJSON" text="Guardar proximos a vencer" />
+            <Button fx:id="btnVolver" layoutX="33.0" layoutY="18.0" mnemonicParsing="false" onAction="#volverListaCompleta" prefHeight="25.0" prefWidth="96.0" text="Volver atras" visible="false"/>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

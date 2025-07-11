@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="342.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FormularioController">
+   <children>
+      <Label layoutX="30.0" layoutY="39.0" prefHeight="19.0" prefWidth="163.0" text="NOMBRE COMERCIAL">
+         <font>
+            <Font name="Monospaced Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="92.0" prefHeight="19.0" prefWidth="163.0" text="DOSIS">
+         <font>
+            <Font name="Monospaced Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="150.0" prefHeight="19.0" prefWidth="192.0" text="FECHA VENCIMIENTO">
+         <font>
+            <Font name="Monospaced Regular" size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="cbTipo" layoutX="284.0" layoutY="14.0" onAction="#tipoCambiado" prefWidth="150.0" />
+      <TextField fx:id="txtNombre" layoutX="30.0" layoutY="58.0" prefHeight="25.0" prefWidth="577.0" />
+      <TextField fx:id="txtDosis" layoutX="30.0" layoutY="111.0" prefHeight="25.0" prefWidth="577.0" />
+      <Button fx:id="btnAceptar" layoutX="136.0" layoutY="273.0" mnemonicParsing="false" onAction="#aceptar" prefHeight="46.0" prefWidth="140.0" text="Aceptar" />
+      <Button fx:id="btnCancelar" layoutX="434.0" layoutY="273.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="46.0" prefWidth="140.0" text="Cancelar" />
+      <DatePicker fx:id="pickerFechaVencimiento" layoutX="30.0" layoutY="169.0" prefHeight="25.0" prefWidth="232.0" promptText="dd/MM/yyyy" />
+      <CheckBox fx:id="chkReceta" layoutX="33.0" layoutY="222.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" text="¿Requiere receta?" visible="false" />
+      <ChoiceBox fx:id="cbObjetivo" layoutX="397.0" layoutY="147.0" prefWidth="150.0" visible="false" />
+   </children>
+</AnchorPane>
